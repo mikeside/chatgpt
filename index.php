@@ -64,7 +64,7 @@ $type = "个人";
 <!--                                <label for="keep"></label>-->
 <!--                            </div>-->
                             <div class="input-group">
-                                <h2 class="logo"><a class="links" id="clean" title="清空对话信息"><span class="logo-title">清空对话信息</span></a></h2>
+                                <h3 class="logo"><a class="links" id="clean" title="清空对话信息"><span class="logo-title">清空对话信息</span></a></h3>
                             </div>
                             <div class="input-group">
                                 <span style="text-align: center;color:#9ca2a8">&nbsp;&nbsp;预设话术：</span>
