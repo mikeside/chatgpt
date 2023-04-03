@@ -28,7 +28,7 @@ $type = "个人";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>师夷长技以制夷</title>
+    <title>ChatGPT<?= $type ?>专用版</title>
     <link rel="stylesheet" href="css/common.css?v1.1">
     <link rel="stylesheet" href="css/wenda.css?v1.1">
     <link rel="stylesheet" href="css/hightlight.css">
@@ -44,7 +44,7 @@ $type = "个人";
 <!--                <div class="header-logo">-->
 <!--                    <h2 class="logo"><a class="links" href="https://github.com/dirk1983/chatgpt"><span class="logo-title">获取源码</span></a></h2>-->
 <!--                </div>-->
-                <div style=" width: 100%; color: #fff;text-align: center;font-size: 28px;font-weight: bold;">打入敌人内部，瓦解敌人，为人民做贡献！</div>
+                <div style=" width: 100%; color: #fff;text-align: center;font-size: 28px;font-weight: bold;">师夷长技以制夷</div>
             </div>
         </header>
         <div class="layout-content">
