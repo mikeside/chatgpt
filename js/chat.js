@@ -120,7 +120,13 @@ function autoresize() {
 $(document).ready(function () {
     initcode();
     autoresize();
-    $("#kw-target").on('keydown', function (event) {
+    $("#kw-target").on('keydown', function (e) {
+        if(e.ctrlKey && e.which == 13 || e.which == 10) {
+            return false;
+        }
+        else if (e.shiftKey && e.which==13 || e.which == 10) {
+            return false;
+        }
         if (event.keyCode == 13) {
             send_post();
             return false;
