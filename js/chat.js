@@ -127,7 +127,7 @@ $(document).ready(function () {
         else if (e.shiftKey && e.which==13 || e.which == 10) {
             return false;
         }
-        if (event.keyCode == 13) {
+        if (e.keyCode == 13) {
             send_post();
             return false;
         }
