@@ -121,7 +121,7 @@ $(document).ready(function () {
     initcode();
     autoresize();
     $("#kw-target").on('keydown', function (event) {
-        if (event.keyCode == 13 && !event.ctrlKey || !event.shiftKey) {
+        if (event.keyCode == 13 && (!event.ctrlKey || !event.shiftKey)) {
             send_post();
             return false;
         }
