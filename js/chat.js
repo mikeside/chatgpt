@@ -121,13 +121,12 @@ $(document).ready(function () {
     initcode();
     autoresize();
     $("#kw-target").on('keydown', function (e) {
-        if(e.ctrlKey && e.which == 13 || e.which == 10) {
-            return false;
+
+        let keycode = (e.keyCode ? e.keyCode : e.which);
+        if ((e.ctrlKey || e.shiftKey) && (keycode == 13 || keycode == 10)) {
+            $(this).val($(this).val() + "\n");
         }
-        else if (e.shiftKey && e.which==13 || e.which == 10) {
-            return false;
-        }
-        if (e.keyCode == 13) {
+        else if ((!e.ctrlKey || !e.shiftKey) && (keycode == 13 || keycode == 10)) {
             send_post();
             return false;
         }
