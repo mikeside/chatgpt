@@ -193,7 +193,7 @@ $type = "个人";
                         <div id="fixed-block">
                             <div class="precast-block" id="kw-target-box" data-flex="main:left cross:center">
                                 <div id="target-box" class="box">
-                                    <textarea name="kw-target" placeholder="在此提问，按 Enter 发送" id="kw-target" autofocus rows=1></textarea>
+                                    <textarea name="kw-target" placeholder="在此提问，按 Shift + Enter 换行，按 Enter 发送" id="kw-target" autofocus rows=1></textarea>
                                 </div>
                                 <div class="right-btn layout-bar">
                                     <p class="btn ai-btn bright-btn" id="ai-btn" data-flex="main:center cross:center"><i class="iconfont icon-wuguan"></i>发送</p>

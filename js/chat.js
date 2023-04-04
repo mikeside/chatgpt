@@ -123,10 +123,7 @@ $(document).ready(function () {
     $("#kw-target").on('keydown', function (e) {
 
         let keycode = (e.keyCode ? e.keyCode : e.which);
-        if ((e.ctrlKey || e.shiftKey) && (keycode == 13 || keycode == 10)) {
-            $(this).val($(this).val() + "\n");
-        }
-        else if ((!e.ctrlKey || !e.shiftKey) && (keycode == 13 || keycode == 10)) {
+        if ((!e.ctrlKey || !e.shiftKey) && (keycode == 13 || keycode == 10)) {
             send_post();
             return false;
         }
