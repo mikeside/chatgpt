@@ -74,7 +74,7 @@ function isMobile() {
 }
 
 function insertPresetText() {
-    $("#kw-target").val($('#preset-text').val());
+    $("#kw-target").val($('#preset-text').val()).focus();
     autoresize();
 }
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
         let keycode = (e.keyCode ? e.keyCode : e.which);
         if ((e.ctrlKey || e.shiftKey) && (keycode == 13 || keycode == 10)) {
-            // $(this).val($(this).val() + "\r\n");
+            // don't have to do anything
         }
         else if ((!e.ctrlKey || !e.shiftKey) && (keycode == 13 || keycode == 10)) {
             send_post();
